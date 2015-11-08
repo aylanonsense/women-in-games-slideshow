@@ -1,0 +1,22 @@
+{
+  "name": "fighting-game-fundamentals",
+  "version": "0.0.0",
+  "description": "A slideshow on the basics of fighting games.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bridgs/fighting-game-fundamentals.git"
+  },
+  "author": "bridgs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bridgs/fighting-game-fundamentals/issues"
+  },
+  "homepage": "https://github.com/bridgs/fighting-game-fundamentals#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
