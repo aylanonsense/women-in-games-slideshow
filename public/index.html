@@ -2,35 +2,235 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-
-		<title>reveal.js - The HTML Presentation Framework</title>
-
+		<title>Fighting Game Fundamentals</title>
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
-
-		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<!--<script>
+		<style>
+			.reveal section figcaption {
+				font-size: 40%;
+				font-style: italic;
+				margin-top: -15px;
+				opacity: 0.5;
+			}
+			.reveal section img {
+				background: none;
+				border: none;
+			}
+			.reveal section .vocab {
+				color: #1b91ff;
+			}
+			.reveal section .hitbox {
+				color: #f00;
+			}
+			.reveal section .hurtbox {
+				color: #00f;
+			}
+		</style>
+		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>-->
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+		</script>
 	</head>
-
 	<body>
-
 		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+				<section>
+					<h1>Fighting Game Fundamentals</h1>
+					<p>Ayla Myers</p>
+				</section>
+
+				<section>
+					<h2>About me</h2>
+				</section>
+
+				<section>
+					<h2>What you'll learn</h2>
+				</section>
+
+				<section>
+					<h2>What is a fighting game?</h2>
+					<p>A video game in which <span class="fragment highlight-red">two players</span> each control <span class="fragment highlight-red">a character</span> in a <span class="fragment highlight-red">2D plane</span>. Players win by reducing their opponent to <span class="fragment highlight-red">zero health</span> through damaging moves.</p>
+					<figure>
+					    <img src="/img/sf2-ryu-vs-ken.jpg" width="568" height="381" />
+					    <figcaption>Ken vs Ryu (Street Fighter II)</figcaption>
+					</figure>
+				</section>
+
+				<section>
+					<p>The point is it's up for debate!</p>
+				</section>
+
+				<section>
+					<h2>How do fighting games work?</h2> (how are they programmed)
+				</section>
+				<section>
+					<h2>How many options do you have at any point in time?</h2>
+					<p>How do you choose what to do???</p>
+				</section>
+
+				<section>
+					<h2>Let's review the basics!</h2>
+				</section>
+
+				<section>
+					<h2>Frames</h2>
+					<p>A <strong class="vocab">frame</strong> is a still image</p>
+					<figure>
+						<img src="/img/megaman-run-frames.gif" width="400" height="120" />
+					</figure>
+					<p>By displaying frames in quick succession we create the illusion of movement</p>
+					<figure>
+						<img src="/img/megaman-run.gif" width="130" height="120" />
+						<figcaption>Run animation (Megaman)</figcaption>
+					</figure>
+				</section>
+
+				<section>
+					<h2>Frames</h2>
+					<figure>
+						<img src="/img/ryu-standing-roundhouse-frames.gif" width="400" height="120" />
+					</figure>
+					<p>Fighting games have frames too!</p>
+					<p>Most fighting games run at 60 frames per second</p>
+					<figure>
+						<img src="/img/ryu-standing-roundhouse.gif" width="130" height="120" />
+						<figcaption>Ryu's standing roundhouse (Super Street Fighter II)</figcaption>
+					</figure>
+				</section>
+
+				<section>
+					<h2>Hitboxes</h2>
+					<p>Question: who is getting hit here?</p>
+					<figure>
+						<img src="/img/chun-li-ryu-kicks.gif" width="384" height="336" />
+						<figcaption>Chun-Li vs Ryu (Super Street Fighter II)</figcaption>
+					</figure>
+				</section>
+
+				<section>
+					<h2>Hitboxes</h2>
+					<p>Answer: Ryu is hitting Chun-Li</p>
+					<figure>
+						<img src="/img/chun-li-ryu-kicks-hitboxes.gif" width="384" height="336" />
+						<figcaption>Chun-Li vs Ryu (Super Street Fighter II)</figcaption>
+					</figure>
+				</section>
+
+				<section>
+					<h2>Hitboxes</h2>
+					<p>All the video game cares about are these rectangles</p>
+					<figure>
+						<img src="/img/chun-li-ryu-kicks-hitboxes-only.gif" width="384" height="336" />
+					</figure>
+					<p><strong class="hitbox">Hitboxes</strong> that can hit your opponent</p>
+					<p><strong class="hurtbox">Hurtboxes</strong> where you can be hurt</p>
+				</section>
+
+				<section>
+					<h2>Hitboxes</h2>
+					<p>Even 3D fighting games have hitboxes... err... hit<strong>bubbles</strong>!</p>
+					<figure>
+						<img src="/img/cpt-falcon-utilt-hitboxes.gif" width="640" height="460" />
+						<figcaption>Captain Falcon's up-tilt (Super Smash Bros. Melee)</figcaption>
+					</figure>
+				</section>
+
+				<section>
+					<h2>What makes a move good?</h2>
+				</section>
+
+				<section>
+					<h2>Damage</h2>
+				</section>
+
+				<section>
+					<h2>Disjointedness</h2>
+				</section>
+
+				<section>
+					<h2>Startup</h2>
+				</section>
+
+				<section>
+					<h2>Recovery</h2>
+				</section>
+
+				<section>
+					<h2>Active frames</h2>
+				</section>
+
+				<section>
+					<h2>Invincibility</h2>
+				</section>
+
+				<section>
+					<h2>Phases of gameplay</h2>
+				</section>
+
+				<section>
+					<h2>The neutral game</h2>
+				</section>
+
+				<section>
+					<h2>Spacing</h2>
+				</section>
+
+				<section>
+					<h2>Footsies</h2>
+				</section>
+
+				<section>
+					<h2>Zoning</h2>
+				</section>
+
+				<section>
+					<h2>Pokes</h2>
+				</section>
+
+				<section>
+					<h2>Hit confirms</h2>
+				</section>
+
+				<section>
+					<h2>Offensive game</h2>
+				</section>
+
+				<section>
+					<h2>Combos and attack strings</h2>
+				</section>
+
+				<section>
+					<h2>Defensive game</h2>
+				</section>
+
+				<section>
+					<h2>Blocking</h2>
+				</section>
+
+
+				<section>
+					<h2>Grabs</h2>
+				</section>
+
+				<section>
+					<h2>Knockdown</h2>
+				</section>
+
+				<section>
+					<h2>Back against the wall</h2>
+				</section>
+
+				<section>
+					<h2>Styles of play (rushdown, zoner, turtling, etc)</h2>
+				</section>
+
+
+
+
 				<section>
 					<h1>Reveal.js</h1>
 					<h3>The HTML Presentation Framework</h3>
@@ -359,27 +559,19 @@ Reveal.addEventListener( 'customevent', function() {
 						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
 					</p>
 				</section>
-
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
 		<script>
-
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
+				controls: false,
 				progress: true,
 				history: true,
+				overview: true,
 				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
+				transition: 'none',
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
@@ -391,6 +583,5 @@ Reveal.addEventListener( 'customevent', function() {
 			});
 
 		</script>
-
 	</body>
 </html>
