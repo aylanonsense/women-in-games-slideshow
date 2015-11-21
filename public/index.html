@@ -21,10 +21,33 @@
 				color: #1b91ff;
 			}
 			.reveal section .hitbox {
-				color: #f00;
+				background-color: #911111;
+				padding: 0 5px;
 			}
 			.reveal section .hurtbox {
+				background-color: #0f0f9b;
+				padding: 0 5px;
+			}
+			* {
+				image-rendering: pixelated;
+			}
+			.startup {
 				color: #00f;
+			}
+			.active {
+				color: #f00;
+			}
+			.recovery {
+				color: #ff0;
+			}
+			.really-bad {
+				color: #933;
+			}
+			.bad {
+				color: #e22;
+			}
+			.okay {
+				color: #fd2
 			}
 		</style>
 		<script>
@@ -40,27 +63,94 @@
 			<div class="slides">
 				<section>
 					<h1>Fighting Game Fundamentals</h1>
+					<img src="/img/ayla-circle.jpg" width="233" height="233" />
 					<p>Ayla Myers</p>
 				</section>
 
 				<section>
+					<h2>My experience</h2>
+					<div style="position:relative">
+						<ul style="float-left;list-style-type:none;">
+							<li>Super Smash Bros.</li>
+							<li>Super Smash Bros. Melee</li>
+							<li>Super Smash Bros. Brawl</li>
+							<li>Super Smash Bros. 4</li>
+							<li>Guilty Gear XX Accent Core</li>
+							<li>Guilty Gear Xrd</li>
+							<li>BlazBlue: Chronophantasma</li>
+							<li>Marvel vs Capcom 2</li>
+							<li>Street Fighter II Turbo</li>
+							<li>Ultra Street Fighter IV</li>
+						</ul>
+						<ul class="fragment" style="float-right;list-style-type:none;">
+							<li class="okay">Fine</li>
+							<li class="bad">Not good</li>
+							<li class="okay">Okay</li>
+							<li class="okay">Decent</li>
+							<li class="bad">Terrible</li>
+							<li class="okay">Passable</li>
+							<li class="bad">Awful</li>
+							<li class="really-bad">Atrocious</li>
+							<li class="really-bad">Shameful</li>
+							<li class="really-bad">Just stop</li>
+						</ul>
+					</div>
+				</section>
+
+				<!--<section>
 					<h2>About me</h2>
 				</section>
 
 				<section>
 					<h2>What you'll learn</h2>
+				</section>-->
+
+				<section>
+					<h2>What we aim to learn</h2>
+					<p>To be good at fighting games, you have have to:</p>
+					<ul>
+						<li>have good reflexes</li>
+						<li>execute inputs reliably</li>
+						<li>know your character's moves</li>
+						<li>know your opponent's moves</li>
+						<li>understand how fighting games work</li>
+						<li>know what you need to do to win</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What we aim to learn</h2>
+					<p>You can only learn this stuff by practicing:</p>
+					<ul>
+						<li style="color:#f22;">have good reflexes</li>
+						<li style="color:#f22;">execute inputs reliably</li>
+						<li style="color:#f22;">know your character's moves</li>
+						<li style="color:#f22;">know your opponent's moves</li>
+						<li style="color:#555;">understand how fighting games work</li>
+						<li style="color:#555;">know what you need to do to win</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What we aim to learn</h2>
+					<p>So we're going to focus on this stuff:</p>
+					<ul>
+						<li style="color:#555;">have good reflexes</li>
+						<li style="color:#555;">execute inputs reliably</li>
+						<li style="color:#555;">know your character's moves</li>
+						<li style="color:#555;">know your opponent's moves</li>
+						<li style="color:#1b91ff;">understand how fighting games work</li>
+						<li style="color:#1b91ff;">know what you need to do to win</li>
+					</ul>
 				</section>
 
 				<section>
 					<h2>What is a fighting game?</h2>
 					<p>A video game in which <span class="fragment highlight-red">two players</span> each control <span class="fragment highlight-red">a character</span> in a <span class="fragment highlight-red">2D plane</span>. Players win by reducing their opponent to <span class="fragment highlight-red">zero health</span> through damaging moves.</p>
-					<figure>
-					    <img src="/img/sf2-ryu-vs-ken.jpg" width="568" height="381" />
-					    <figcaption>Ken vs Ryu (Street Fighter II)</figcaption>
-					</figure>
+				    <img src="/img/sf2-ryu-vs-ken.jpg" width="568" height="381" />
 				</section>
 
-				<section>
+				<!--<section>
 					<p>The point is it's up for debate!</p>
 				</section>
 
@@ -70,10 +160,10 @@
 				<section>
 					<h2>How many options do you have at any point in time?</h2>
 					<p>How do you choose what to do???</p>
-				</section>
+				</section>-->
 
 				<section>
-					<h2>Let's review the basics!</h2>
+					<h1>Frames!</h1>
 				</section>
 
 				<section>
@@ -83,63 +173,245 @@
 						<img src="/img/megaman-run-frames.gif" width="400" height="120" />
 					</figure>
 					<p>By displaying frames in quick succession we create the illusion of movement</p>
-					<figure>
-						<img src="/img/megaman-run.gif" width="130" height="120" />
-						<figcaption>Run animation (Megaman)</figcaption>
-					</figure>
+					<img src="/img/megaman-run.gif" width="130" height="120" />
 				</section>
 
 				<section>
 					<h2>Frames</h2>
 					<figure>
-						<img src="/img/ryu-standing-roundhouse-frames.gif" width="400" height="120" />
+						<img src="/img/ryu-roundhouse-1-frames.gif" width="400" height="120" />
 					</figure>
 					<p>Fighting games have frames too!</p>
 					<p>Most fighting games run at 60 frames per second</p>
+					<img src="/img/ryu-roundhouse-2.gif" width="130" height="120" />
+				</section>
+
+				<section>
+					<h2>Frames</h2>
+					<p>Even though it's only 5 images, this kick lasts 31 frames</p>
+					<img src="/img/ryu-roundhouse-3-all-frames.gif" width="659" height="431" />
+				</section>
+
+				<section>
+					<h2>Frames</h2>
+					<p>We can condense that so it's easier to look at</p>
 					<figure>
-						<img src="/img/ryu-standing-roundhouse.gif" width="130" height="120" />
-						<figcaption>Ryu's standing roundhouse (Super Street Fighter II)</figcaption>
+						<img src="/img/ryu-roundhouse-4-condensed.gif" width="640" height="212" />
 					</figure>
+				</section>
+
+				<section>
+					<h1>Hitboxes!</h1>
 				</section>
 
 				<section>
 					<h2>Hitboxes</h2>
 					<p>Question: who is getting hit here?</p>
-					<figure>
-						<img src="/img/chun-li-ryu-kicks.gif" width="384" height="336" />
-						<figcaption>Chun-Li vs Ryu (Super Street Fighter II)</figcaption>
-					</figure>
+					<img src="/img/chun-li-ryu-kicks-1.gif" width="384" height="336" />
 				</section>
 
 				<section>
 					<h2>Hitboxes</h2>
 					<p>Answer: Ryu is hitting Chun-Li</p>
-					<figure>
-						<img src="/img/chun-li-ryu-kicks-hitboxes.gif" width="384" height="336" />
-						<figcaption>Chun-Li vs Ryu (Super Street Fighter II)</figcaption>
-					</figure>
+					<img src="/img/chun-li-ryu-kicks-2-hitboxes.gif" width="384" height="336" />
 				</section>
 
 				<section>
 					<h2>Hitboxes</h2>
-					<p>All the video game cares about are these rectangles</p>
-					<figure>
-						<img src="/img/chun-li-ryu-kicks-hitboxes-only.gif" width="384" height="336" />
-					</figure>
-					<p><strong class="hitbox">Hitboxes</strong> that can hit your opponent</p>
-					<p><strong class="hurtbox">Hurtboxes</strong> where you can be hurt</p>
+					<p>All the game cares about are these rectangles</p>
+					<img src="/img/chun-li-ryu-kicks-3-hitboxes-only.gif" width="384" height="336" />
+					<p><span class="hitbox">Hitboxes</span> that can hit your opponent</p>
+					<p><span class="hurtbox">Hurtboxes</span> where you can be hurt</p>
 				</section>
 
 				<section>
-					<h2>Hitboxes</h2>
-					<p>Even 3D fighting games have hitboxes... err... hit<strong>bubbles</strong>!</p>
+					<h1>Putting em together</h1>
+				</section>
+
+				<section>
+					<h2>Putting em together</h2>
+					<p>Remember this kick?</p>
 					<figure>
-						<img src="/img/cpt-falcon-utilt-hitboxes.gif" width="640" height="460" />
-						<figcaption>Captain Falcon's up-tilt (Super Smash Bros. Melee)</figcaption>
+						<img src="/img/ryu-roundhouse-4-condensed.gif" width="640" height="212" />
 					</figure>
 				</section>
 
 				<section>
+					<h2>Putting em together</h2>
+					<p>Here are the <span class="hitbox">hitboxes</span> and <span class="hurtbox">hurtboxes</span> for it</p>
+					<img src="/img/ryu-roundhouse-5-condensed-hitboxes.gif" width="640" height="212" />
+					<p class="fragment">Most of the frames don't even have a <span class="hitbox">hitbox</span>!</p>
+				</section>
+
+				<section>
+					<h2>Parts of a move</h2>
+					<p>We can separate this move into three parts</p>
+					<img src="/img/ryu-roundhouse-6-parts-of-attack.gif" width="640" height="212" />
+					<p class="fragment"><strong class="startup">Startup:</strong> before the first <span class="hitbox">hitbox</span></p>
+					<p class="fragment"><strong class="active">Active:</strong> frames with a <span class="hitbox">hitbox</span></p>
+					<p class="fragment"><strong class="recovery">Recovery:</strong> after the final <span class="hitbox">hitbox</span></p>
+				</section>
+
+				<section>
+					<h2>Parts of a move</h2>
+					<p>When you decide to use a move you are <strong>locked into that choice!</strong> You can't block, jump, or do anything else until it ends</p>
+					<figure>
+						<img src="/img/ryu-roundhouse-6-parts-of-attack.gif" width="640" height="212" />
+					</figure>
+					<p>During a move's <strong class="startup">startup</strong> and <strong class="recovery">recovery</strong> you are a sitting duck!</p>
+				</section>
+
+				<section>
+					<h1>What makes a move good?</h1>
+				</section>
+
+				<section>
+					<h2>What makes a move good?</h2>
+					<p>Few <strong class="startup">startup</strong> frames</p>
+					<p>[TODO STARTUP COMPARISON IMAGE]</p>
+					<p>(less time for your opponent to react)</p>
+				</section>
+
+				<section>
+					<h2>What makes a move good?</h2>
+					<p>Few <strong class="recovery">recovery</strong> frames</p>
+					<p>[TODO RECOVERY COMPARISON IMAGE]</p>
+					<p>(less time you are a vulnerable after an attack)</p>
+				</section>
+
+				<section>
+					<h2>What makes a move good?</h2>
+					<p>Big/ranged <span class="hitbox">hitboxes</span></p>
+					<p>[TODO HITBOX COMPARISON IMAGE]</p>
+					<p>(more likely to connect with your opponent)</p>
+				</section>
+
+				<section>
+					<h2>What makes a move good?</h2>
+					<p>Disjointed <span class="hitbox">hitboxes</span></p>
+					<p>[TODO DISJOINTED COMPARISON IMAGE]</p>
+					<p>(less likely for your <span class="hutbox">hurtboxes</span> to be hit)</p>
+				</section>
+
+				<section>
+					<h2>What makes a move good?</h2>
+					<p>Lots of damage!</p>
+					<p>[TODO DAMAGE COMPARISON IMAGE]</p>
+					<p>(damage = good)</p>
+				</section>
+
+				<section>
+					startup
+						good:	blanka		Close Standing Strong (2)
+								cammy		Close Standing Strong (2)
+								dhalsim		Close Crouching Forward (1)
+						bad:	blanka		Close Standing Short (13)
+								chunli		Neck Breaker (36)
+
+					recovery
+						good:	blanka		Close Standing Strong (3)
+								deejay		Crouching Jab (1)
+								deejay		Close/Far Standing Strong (1)
+								bison		Close Standing Short (1)
+								zangief		Far Standing Short (0)
+						bad:	blanka		Close/Far Standing Roundhouse (21)
+								cammy		Crouching Roundhouse (21)
+								cammy		Cannon Drill Roundhouse Version (34_)
+								chunli		Flip Kick (43)
+								guile		Close Standing Fierce (29) *
+
+					big hitbox
+						good:	zangief		Close Standing Forward
+						bad:	
+
+					ranged hitbox
+						good:	vega
+						bad:	
+
+					disjointed hitbox
+						good:	blanka		Close Standing Jab
+						bad:	
+
+					damage
+						good:	zangief		Spinning Pile Driver
+						bad:	
+
+					misleading hitboxes:
+								dhalsim		Close Standing Jab
+				</section>
+
+				<section>
+					<h2>What makes a move good?</h2>
+					<ul>
+						<li>Few <strong class="startup">startup</strong> frames</li>
+						<li>Few <strong class="recovery">recovery</strong> frames</li>
+						<li>Big/ranged <span class="hitbox">hitboxes</span></li>
+						<li>Disjointed <span class="hitbox">hitboxes</span></li>
+						<li>Lots of damage!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Let's look at the game from a higher perspective</h1>
+				</section>
+
+				<section>
+					<h2>Phases of the game</h2>
+					<p>At any point in time, you'll find yourself in one of three situations</p>
+					<ul>
+						<li><strong>On defense:</strong> you are blocking/getting hit and are at a disadvantage</li>
+						<li><strong>On offense:</strong> you are hitting the opponent and have the advantage</li>
+						<li><strong>"The neutral game":</strong> both players are trying to land a hit to gain the advantage</li>
+					</ul>
+				</section>
+
+				<!--<section>
+					<h2>Defending yourself</h2>
+					<p>When you hold the direction away from the opponent, you will automatically block your opponent's attacks and take no damage</p>
+					<p>[TODO BLOCKING IMAGE]</p>
+					<p>Blocking is extremely powerful!</p>
+				</section>-->
+
+				<!--<section>
+					<h2>Defending yourself</h2>
+					<p>There are only three counters to blocking</p>
+					<ul>
+						<li>Low/overhead attacks</li>
+						<li>Chip damage</li>
+						<li>Throws</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Defending yourself</h2>
+					<p>You can block while standing or while crouching</p>
+					<p>[TODO BLOCK IMAGE]</p>
+					<p><strong class="vocab">Overhead attacks</strong> must be blocked standing. <strong class="vocab">Low attacks</strong> must be blocked crouching</p>
+				</section>
+
+				<section>
+					<h2>Defending yourself</h2>
+					<p>Special moves like the hadouken (fireball) will deal a small amount of "<strong class="vocab">chip damage</strong>" even if blocked</p>
+					<p>[TODO THROW IMAGE]</p>
+					<p>If you are very low on life, blocking won't save you</p>
+				</section>
+
+				<section>
+					<h2>Defending yourself</h2>
+					<p>A <strong class="vocab">throw</strong> will hit you even if you are blocking</p>
+					<p>[TODO THROW IMAGE]</p>
+					<p>Throws are generally very short range</p>
+				</section>-->
+
+				<section>
+					<h2>Defending yourself</h2>
+					<p><strong>The situation:</strong> the opponent has landed a hit up close and
+					<p><strong>Your goal:</strong> block until you find an opening!</p>
+					<p>[TODO BLOCKING IMAGE]</p>
+					<p>Blocking
+				</section>
+
+				<!--<section>
 					<h2>What makes a move good?</h2>
 				</section>
 
@@ -244,10 +516,10 @@
 					<p>
 						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
 					</p>
-				</section>
+				</section>-->
 
 				<!-- Example of nested vertical slides -->
-				<section>
+				<!--<section>
 					<section>
 						<h2>Vertical Slides</h2>
 						<p>Slides can be nested inside of each other.</p>
@@ -353,7 +625,6 @@
 					<h2>Themes</h2>
 					<p>
 						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
@@ -558,7 +829,7 @@ Reveal.addEventListener( 'customevent', function() {
 						- <a href="http://slides.com">Try the online editor</a> <br>
 						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
 					</p>
-				</section>
+				</section>-->
 			</div>
 		</div>
 
