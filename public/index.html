@@ -7,50 +7,16 @@
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 		<style>
-			.reveal section figcaption {
-				font-size: 40%;
-				font-style: italic;
-				margin-top: -15px;
-				opacity: 0.5;
-			}
 			.reveal section img {
 				background: none;
 				border: none;
 			}
-			.reveal section .vocab {
-				color: #1b91ff;
-			}
-			.reveal section .hitbox {
-				background-color: #911111;
-				padding: 0 5px;
-			}
-			.reveal section .hurtbox {
-				background-color: #0f0f9b;
-				padding: 0 5px;
-			}
 			* {
 				image-rendering: pixelated;
 			}
-			.startup {
-				color: #00f;
-			}
-			.active {
-				color: #f00;
-			}
-			.recovery {
-				color: #ff0;
-			}
-			.really-bad {
-				color: #933;
-			}
-			.bad {
-				color: #e22;
-			}
-			.okay {
-				color: #fd2
-			}
-			.blockstun {
-				color: #dc09d5;
+			span.vocab {
+				font-weight: bold;
+				color: #00aded;
 			}
 		</style>
 		<script>
@@ -92,20 +58,20 @@
 					<p>(This is what I actually did)</p>
 				</section>
 
-				<section>
+				<!--<section>
 					<h3>Linework</h3>
 					<p>We can't always draw the shapes we want using pixels, so we need draw our lines so they <em>imply</em> the shapes we want</p>
 					<img src="/img/implied-shapes-1.png" width="525" height="275" />
-				</section>
+				</section>-->
 
 				<section>
 					<h3>Linework</h3>
-					<p>Small changes can imply very different shapes</p>
+					<p>Careful! Small changes can imply very different shapes</p>
 					<img src="/img/implied-shapes-2.png" width="616" height="490" />
 				</section>
 
 				<section>
-					<h3>Activity 3: Create a basic sprite</h3>
+					<h3>Activity 3: Create a sprite</h3>
 					<img src="/img/implied-shapes-3.png" width="735" height="330" />
 					<p>
 						<ul>
@@ -118,18 +84,77 @@
 				</section>
 
 				<section>
-					<h3>Coloring</h3>
-					<p>Pixel art typically features very low color counts</p>
-					<p>Fewer colors means you're forced to reuse colors</p>
-					<p>This reuse of colors creates visual consistency</p>
-					<img src="/img/mario.png" width="384" height="336" />
-					<p>
+					<h3>Coloring a sprite</h3>
+					<p>Once we have the basic shape and colors, we want to add highlights and shadows to make our sprite appear 3D</p>
+					<img src="/img/ball-shading-1.png" width="330" height="300" />
 				</section>
 
 				<section>
-					<h3>Color ramp</h3>
-					<p>Colors are typically arranged along <strong>color ramps</strong></p>
+					<h3>Coloring a sprite</h3>
+					<p>Highlights/shadows depend on the light source. In general light should be above and at an angle to your sprite</p>
+					<p>(Like the sun!)</p>
+					<img src="/img/ball-shading-2.png" width="350" height="320" />
+				</section>
+
+				<section>
+					<h3>Coloring a sprite</h3>
+					<p>The decision of how many colors to use is up to you!</p>
+					<img src="/img/ball-shading-3.png" width="854" height="161" />
+					<p>But in general, only add a color if it will<br> meaningfully contribute to your piece</p>
+				</section>
+
+				<section>
+					<h3>Color ramps</h3>
+					<p>The colors you choose for highlights/shadows can be arranged from dark to light to form a <span class="vocab">color ramp</span></p>
+					<img src="/img/ball-shading-4.png" width="350" height="200" />
+					<p>You should think about your colors in the context<br> of the color ramps they are a part of</p>
+				</section>
+
+				<section>
+					<h3>Color ramps</h3>
+					<p>In real life light and shadows change the hue of an object</p>
+					<img src="/img/color-ramp-1.jpg" width="772" height="428" />
+					<p>This is called <span class="vocab">hue shifting</span> and we want it in our color ramps!</p>
+				</section>
+
+				<section>
+					<h3>Color ramps</h3>
+					<p>Highlights tend to be more yellow,<br>shadows tend to be more blue</p>
+					<img src="/img/color-ramp-2.jpg" width="769" height="384" />
+				</section>
+
+				<!--<section>
+					<h3>Color ramps</h3>
+					<p>Glossy objects reflect light directly and tend<br> to experience very little hue shift</p>
+					<img src="/img/color-ramp-3.jpg" width="557" height="415" />
+				</section>-->
+
+				<section>
+					<h3>Color ramps</h3>
+					<p>Here's my froggie with and without hue shifting</p>
+					<img src="/img/color-ramp-4.png" width="820" height="250" />
+					<p>The frog on the left is more visually consistent</p>
+					<p>by hue shifting I also reuse a color&mdash;the lightest green is the same color as the lightest yellow</p> 
+				</section>
+
+				<section>
+					<h3>Color ramps</h3>
+					<p>A complete palette is just a bunch of color ramps</p>
+					<img src="/img/color-ramp-5.png" width="408" height="324" />
+					<p>By finding colors that can be reused in multiple color ramps, you lower your color count and increase consistency</p> 
+				</section>
+
+				<section>
+					<h3>Activity 4: Color your sprite</h3>
+					<img src="/img/frog6.gif" width="640" height="220" />
 					<p>
+						<ul>
+							<li>Add shadows and highlights</li>
+							<li>Organize your colors into color ramps</li>
+							<li>Be on the lookout for reusable colors</li>
+							<li>Add any final details</li>
+						</ul>
+					</p>
 				</section>
 
 				<!--<section>
