@@ -65,6 +65,74 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
+					<h3>Making a sprite</h3>
+					<p>Let's try making a more complex sprite</p>
+					<img src="/img/frog1.gif" width="324" height="264" />
+				</section>
+
+				<section>
+					<h3>Creating an outline</h3>
+					<p>The first step is to get the basic lines and colors down</p>
+					<img src="/img/frog2.gif" width="324" height="264" />
+				</section>
+
+				<section>
+					<h3>Creating an outline</h3>
+					<p>There are two basic strategies for doing this:</p>
+					<p>1. Fiddle with some lines, then fill them in</p>
+					<img src="/img/frog3.gif" width="750" height="132" />
+					<p>2. Sculpt some color blobs, then outline them</p>
+					<img src="/img/frog4.gif" width="750" height="132" />
+				</section>
+
+				<section>
+					<h3>Creating an outline</h3>
+					<p>In reality, you should mix these two techniques</p>
+					<img src="/img/frog5.gif" width="750" height="132" />
+					<p>(This is what I actually did)</p>
+				</section>
+
+				<section>
+					<h3>Linework</h3>
+					<p>We can't always draw the shapes we want using pixels, so we need draw our lines so they <em>imply</em> the shapes we want</p>
+					<img src="/img/implied-shapes-1.png" width="525" height="275" />
+				</section>
+
+				<section>
+					<h3>Linework</h3>
+					<p>Small changes can imply very different shapes</p>
+					<img src="/img/implied-shapes-2.png" width="616" height="490" />
+				</section>
+
+				<section>
+					<h3>Activity 3: Create a basic sprite</h3>
+					<img src="/img/implied-shapes-3.png" width="735" height="330" />
+					<p>
+						<ul>
+							<li>Create an outline of any 3D object</li>
+							<li>Fill it with the fewest possible colors</li>
+							<li>Try to stay within 24x24 (32x32 max)</li>
+							<li>Keep your lines in mind!</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h3>Coloring</h3>
+					<p>Pixel art typically features very low color counts</p>
+					<p>Fewer colors means you're forced to reuse colors</p>
+					<p>This reuse of colors creates visual consistency</p>
+					<img src="/img/mario.png" width="384" height="336" />
+					<p>
+				</section>
+
+				<section>
+					<h3>Color ramp</h3>
+					<p>Colors are typically arranged along <strong>color ramps</strong></p>
+					<p>
+				</section>
+
+				<!--<section>
 					<h1>Fighting Game Fundamentals</h1>
 					<img src="/img/ayla-circle.jpg" width="233" height="233" />
 					<p>Ayla Myers</p>
@@ -152,16 +220,6 @@
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/lEIAy7kAeWE" frameborder="0" allowfullscreen></iframe>
 				</section>
 
-				<!-- <section>
-					<h3>What we aim to learn</h3>
-					<p>Fighting games are tricky because at any point in time you have about ~40 different things you can do</p>
-					<img src="/img/ryu-all-moves.gif" width="712" height="311" />
-				</section> -->
-
-				<!--<section>
-					<h2>Frames</h2>
-				</section>-->
-
 				<section>
 					<h3>Frames</h3>
 					<p>A <strong class="vocab">frame</strong> is a still image</p>
@@ -182,12 +240,6 @@
 					<img src="/img/ryu-roundhouse-2.gif" width="130" height="120" />
 				</section>
 
-				<!-- <section>
-					<h3>Frames</h3>
-					<p>Even though it's only 5 images, this kick lasts 31 frames</p>
-					<img src="/img/ryu-roundhouse-3-all-frames.gif" width="659" height="431" />
-				</section> -->
-
 				<section>
 					<h3>Frames</h3>
 					<p>Even though it's only 5 images, this kick lasts 31 frames</p>
@@ -195,10 +247,6 @@
 						<img src="/img/ryu-roundhouse-4-condensed.gif" width="640" height="212" />
 					</figure>
 				</section>
-
-				<!--<section>
-					<h2>Hitboxes</h2>
-				</section>-->
 
 				<section>
 					<h3>Hitboxes</h3>
@@ -227,10 +275,6 @@
 					<p>... but not always</p>
 				</section>
 
-				<!--<section>
-					<h2>Putting em together</h2>
-				</section>-->
-
 				<section>
 					<h3>Putting em together</h3>
 					<p>Here are the <span class="hitbox">hitboxes</span> and <span class="hurtbox">hurtboxes</span> for that kick</p>
@@ -247,29 +291,11 @@
 					<p><strong class="recovery">Recovery:</strong> after the final <span class="hitbox">hitbox</span></p>
 				</section>
 
-				<!-- <section>
-					<h3>Parts of a move</h3>
-					<p>When you use a move you are <strong>locked into that choice!</strong> You can't block, jump, or do anything else until it ends</p>
-					<img src="/img/ryu-roundhouse-6-parts-of-attack.gif" width="640" height="212" />
-					<p>During a move's <strong class="startup">startup</strong> and <strong class="recovery">recovery</strong> you are a sitting duck!</p>
-				</section> -->
-
-				<!-- <section>
-					<h3>Parts of a move</h3>
-					<p>This is referred to as "<strong class="vocab">frame data</strong>"</p>
-					<p>You can find frame data for most fighting games online</p>
-					<p><strong>But you really don't have to!</strong></p>
-				</section> -->
-
 				<section>
 					<h3>Parts of a move</h3>
 					<p>3D fighting games have frames and <span class="hitbox" style="border-radius:10px">hit<em>bubbles</em></span> too!</p>
 					<img src="/img/cpt-falcon-utilt-hitboxes.gif" width="640" height="460" />
 				</section>
-
-				<!--<section>
-					<h2>What makes a move good?</h2>
-				</section>-->
 
 				<section>
 					<h3>What makes a move good?</h3>
@@ -277,13 +303,6 @@
 					<img src="/img/ryu-all-moves.gif" width="712" height="311" />
 					<p>But I can teach you how to evaluate moves on your own!</p>
 				</section>
-
-				<!-- <section>
-					<h3>What makes a move good?</h3>
-					<p>It'll be like wine tasting!</p>
-					<img src="/img/wine.jpg" width="400" height="400" />
-					<p>You will all be connoisseurs soon</p>
-				</section> -->
 
 				<section>
 					<h3>What makes a move good?</h3>
@@ -338,10 +357,6 @@
 						<li>Lots of damage</li>
 					</ul>
 				</section>
-
-				<!--<section>
-					<h2>Strategy</h2>
-				</section>-->
 
 				<section>
 					<h3>Strategy</h3>
@@ -413,8 +428,6 @@
 					<img src="/img/magneto.jpg" width="148" height="238" style="margin-top:20px;margin-left:20px" />
 				</section>
 
-				<!-- TODO SPOT 4 combos -->
-
 				<section>
 					<h3>Defending yourself</h3>
 					<ul>
@@ -424,10 +437,6 @@
 						<li>If you fail to block they're free to combo you</li>
 					</ul>
 				</section>
-
-				<!--<section>
-					<h2>Attacking your opponent</h2>
-				</section>-->
 
 				<section>
 					<h3>Attacking your opponent</h3>
@@ -517,10 +526,6 @@
 					</ul>
 				</section>
 
-				<!--<section>
-					<h2>The neutral game</h2>
-				</section>-->
-
 				<section>
 					<h3>The neutral game</h3>
 					<p><strong>Situation:</strong> neither player has an immediate advantage</p>
@@ -541,12 +546,6 @@
 					<img src="/img/cammy-guile-neutral-2.gif" width="356" height="328" />
 					<p>At short range all of them will</p>
 				</section>
-
-				<!-- <section>
-					<h3>The neutral game</h3>
-					<p>In-between those two extremes interesting stuff happens</p>
-					<img src="/img/cammy-guile-neutral-3.gif" width="336" height="513" />
-				</section> -->
 
 				<section>
 					<h3>The neutral game</h3>
@@ -582,14 +581,6 @@
 					<iframe width="420" height="315" src="https://www.youtube.com/embed/mk09c6iLLdU?start=20&end=29" frameborder="0" allowfullscreen></iframe>
 				</section>
 
-				<!-- TODO SPOT 3 footsies -->
-
-				<!-- <section>
-					<h3>The neutral game</h3>
-					<p>If you dominate footsies you can <strong class="vocab">zone</strong> your opponent</p>
-					<img src="/img/dhalsim-stand.gif" width="160" height="296" />
-				</section> -->
-
 				<section>
 					<h3>The neutral game</h3>
 					<p>Use <strong class="vocab">pokes</strong> to deal damage and control space (<strong class="vocab">zone</strong>)</p>
@@ -622,10 +613,6 @@
 					</ul>
 				</section>
 
-				<!--<section>
-					<h2>How to get better</h2>
-				</section>-->
-
 				<section>
 					<h3>How to get better</h3>
 					<p>Play!!!!!</p>
@@ -650,10 +637,6 @@
 						<li><a href="https://www.youtube.com/watch?v=hscblqsOydQ">Persona 4</a></li>
 					</ul>
 				</section>
-
-				<!--<section>
-					<h2>Some feminism for you</h2>
-				</section>-->
 
 				<section>
 					<h3>Some feminism for you</h3>
@@ -706,22 +689,7 @@
 						<li>Quotes: <a href="http://www.polygon.com/a/street-fighter-2-oral-history">Street Fighter II: An Oral History</a> on Polygon</li>
 						<li>Reading: <a href="http://www.polygon.com/2014/7/7/5876983/how-to-play-street-fighter-fighting-game-primer">A fighting game primer for everyone</a> on Polygon</li>
 					</ul>
-				</section>
-
-				<!--
-					Building blocks slide at start (LEgos)
-					SPOT 3: footsies https://www.youtube.com/watch?v=lprQR0AJmXo @	34m
-					SPOT 4: combos
-
-					Classic "the play" street fighter 3 parry
-	
-					Smash
-						what's different
-						edgeuarding
-						change in defensive play - blocking not so good
-						not about combos, just stray hits
-
-				-->
+				</section>-->
 			</div>
 		</div>
 
