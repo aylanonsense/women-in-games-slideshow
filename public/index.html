@@ -45,7 +45,12 @@
 
 				<section>
 					<h3>What is pixel art?</h3>
-					<p>The best way to learn is to dive right in</p>
+					<p>(TODO what makes pixel art beautiful, why is it still important, how is it used today)</p>
+				</section>
+
+				<section>
+					<h3>What is pixel art?</h3>
+					<p>The best way to learn is to make some yourself, so...<br> remember Space Invaders?</p>
 					<img src="/img/invader-3.gif" width="559" height="356" />
 				</section>
 
@@ -58,13 +63,18 @@
 							<li>8px tall, 8-16px wide</li>
 							<li>Should have "eyes" and probably "fangs"</li>
 							<li>All one shape (no stray pixels)</li>
-							<li>Put your finished invader into the Google Doc</li>
 						</ul>
 					</p>
 				</section>
 
 				<section>
-					<p>(How animation works)</p>
+					<h3>Frames</h3>
+					<p>A <span class="vocab">frame</span> is a still image</p>
+					<figure>
+						<img src="/img/megaman-run-frames.gif" width="400" height="120" />
+					</figure>
+					<p>By displaying frames in quick succession we create the illusion of movement</p>
+					<img src="/img/megaman-run.gif" width="130" height="120" />
 				</section>
 
 				<section>
@@ -75,7 +85,6 @@
 							<li>Duplicate the first frame of your invader</li>
 							<li>Modify the second frame to make it wiggle</li>
 							<li>Set framerate to 4 FPS</li>
-							<li>Export to animated gif and upload to Google Doc</li>
 						</ul>
 					</p>
 				</section>
@@ -164,7 +173,7 @@
 					<h3>Color ramps</h3>
 					<p>In real life light and shadows change the hue of an object</p>
 					<img src="/img/color-ramp-1.jpg" width="772" height="428" />
-					<p>This is called <span class="vocab">hue shifting</span> and we want it in our color ramps!</p>
+					<p>This is called <span class="vocab">hue shifting</span></p>
 				</section>
 
 				<section>
@@ -184,7 +193,7 @@
 					<p>Here's my froggie with and without hue shifting</p>
 					<img src="/img/color-ramp-4.png" width="820" height="250" />
 					<p>The frog on the left is more visually consistent</p>
-					<p>by hue shifting I also reuse a color&mdash;the lightest green is the same color as the lightest yellow</p> 
+					<p>By hue shifting we also get to reuse a color&mdash;the lightest green is the same color as the lightest yellow</p> 
 				</section>
 
 				<section>
@@ -210,566 +219,8 @@
 				<section>
 					<h3>Thank you!!</h3>
 					<img src="/img/invader-4.gif" width="80" height="40" />
+					<p>Y'all are beautiful pixel artists now!</p>
 				</section>
-
-				<!--<section>
-					<h1>Fighting Game Fundamentals</h1>
-					<img src="/img/ayla-circle.jpg" width="233" height="233" />
-					<p>Ayla Myers</p>
-					<p>(Find this presentation at <a href="http://brid.gs:3013">http://brid.gs:3013</a>)</p>
-				</section>
-
-				<section>
-					<h3>My experience</h3>
-					<div style="position:relative">
-						<ul style="float-left;list-style-type:none;">
-							<li>Super Smash Bros.</li>
-							<li>Super Smash Bros. Melee</li>
-							<li>Super Smash Bros. Brawl</li>
-							<li>Super Smash Bros. 4</li>
-							<li>Guilty Gear XX Accent Core</li>
-							<li>Guilty Gear Xrd</li>
-							<li>BlazBlue: Chronophantasma</li>
-							<li>Marvel vs Capcom 2</li>
-							<li>Street Fighter II Turbo</li>
-							<li>Ultra Street Fighter IV</li>
-						</ul>
-						<ul class="fragment" style="float-right;list-style-type:none;">
-							<li class="okay">Fine</li>
-							<li class="bad">Not good</li>
-							<li class="okay">Okay</li>
-							<li class="okay">Decent</li>
-							<li class="bad">Terrible</li>
-							<li class="okay">Passable</li>
-							<li class="bad">Awful</li>
-							<li class="really-bad">Atrocious</li>
-							<li class="really-bad">Shameful</li>
-							<li class="really-bad">Just stop</li>
-						</ul>
-					</div>
-				</section>
-
-				<section>
-					<h3>What we aim to learn</h3>
-					<p>To be good at fighting games, you have have to:</p>
-					<ul>
-						<li>know your character's moves</li>
-						<li>know your opponent's moves</li>
-						<li>have good reflexes</li>
-						<li>execute inputs reliably</li>
-						<li>understand how fighting games work</li>
-						<li>know what you need to do to win</li>
-					</ul>
-				</section>
-
-				<section>
-					<h3>What we aim to learn</h3>
-					<p>I can't teach you this stuff:</p>
-					<ul>
-						<li style="color:#f22;">know your character's moves</li>
-						<li style="color:#f22;">know your opponent's moves</li>
-						<li style="color:#f22;">have good reflexes</li>
-						<li style="color:#f22;">execute inputs reliably</li>
-						<li style="color:#555;">understand how fighting games work</li>
-						<li style="color:#555;">know what you need to do to win</li>
-					</ul>
-				</section>
-
-				<section>
-					<h3>What we aim to learn</h3>
-					<p>So we're going to focus on this stuff:</p>
-					<ul>
-						<li style="color:#555;">know your character's moves</li>
-						<li style="color:#555;">know your opponent's moves</li>
-						<li style="color:#555;">have good reflexes</li>
-						<li style="color:#555;">execute inputs reliably</li>
-						<li style="color:#1b91ff;">understand how fighting games work</li>
-						<li style="color:#1b91ff;">know what you need to do to win</li>
-					</ul>
-				</section>
-
-				<section>
-					<h3>What is a fighting game?</h3>
-					<p>A video game in which <span class="fragment highlight-red">two players</span> each control <span class="fragment highlight-red">a character</span> in a <span class="fragment highlight-red">2D plane</span>. Players win by reducing their opponent to <span class="fragment highlight-red">zero health</span> through damaging moves.</p>
-					<img src="/img/sf2-ryu-vs-ken.jpg" width="568" height="381" />
-				</section>
-
-				<section>
-					<h3>What is a fighting game?</h3>
-					<p>This is what a fighting game looks like:</p>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/lEIAy7kAeWE" frameborder="0" allowfullscreen></iframe>
-				</section>
-
-				<section>
-					<h3>Frames</h3>
-					<p>A <strong class="vocab">frame</strong> is a still image</p>
-					<figure>
-						<img src="/img/megaman-run-frames.gif" width="400" height="120" />
-					</figure>
-					<p>By displaying frames in quick succession we create the illusion of movement</p>
-					<img src="/img/megaman-run.gif" width="130" height="120" />
-				</section>
-
-				<section>
-					<h3>Frames</h3>
-					<figure>
-						<img src="/img/ryu-roundhouse-1-frames.gif" width="400" height="120" />
-					</figure>
-					<p>Fighting games have frames too!</p>
-					<p>Most fighting games run at 60 frames per second</p>
-					<img src="/img/ryu-roundhouse-2.gif" width="130" height="120" />
-				</section>
-
-				<section>
-					<h3>Frames</h3>
-					<p>Even though it's only 5 images, this kick lasts 31 frames</p>
-					<figure>
-						<img src="/img/ryu-roundhouse-4-condensed.gif" width="640" height="212" />
-					</figure>
-				</section>
-
-				<section>
-					<h3>Hitboxes</h3>
-					<p>Question: who is getting hit here?</p>
-					<img src="/img/chun-li-ryu-kicks-1.gif" width="384" height="336" />
-				</section>
-
-				<section>
-					<h3>Hitboxes</h3>
-					<p>Answer: Ryu is hitting Chun-Li</p>
-					<img src="/img/chun-li-ryu-kicks-2-hitboxes.gif" width="384" height="336" />
-				</section>
-
-				<section>
-					<h3>Hitboxes</h3>
-					<p>All the game cares about are these rectangles</p>
-					<img src="/img/chun-li-ryu-kicks-3-hitboxes-only.gif" width="384" height="336" />
-					<p><span class="hitbox">Hitboxes</span> that can hit your opponent</p>
-					<p><span class="hurtbox">Hurtboxes</span> where you can be hurt</p>
-				</section>
-
-				<section>
-					<h3>Hitboxes</h3>
-					<p>They usually approximate the images...</p>
-					<img src="/img/dhalsim-hitbox-error.gif" width="248" height="312" />
-					<p>... but not always</p>
-				</section>
-
-				<section>
-					<h3>Putting em together</h3>
-					<p>Here are the <span class="hitbox">hitboxes</span> and <span class="hurtbox">hurtboxes</span> for that kick</p>
-					<img src="/img/ryu-roundhouse-5-condensed-hitboxes.gif" width="640" height="212" />
-					<p>Most of the frames don't even have a <span class="hitbox">hitbox</span>!</p>
-				</section>
-
-				<section>
-					<h3>Parts of a move</h3>
-					<p>We can separate any move into three parts</p>
-					<img src="/img/ryu-roundhouse-6-parts-of-attack.gif" width="640" height="212" />
-					<p><strong class="startup">Startup:</strong> before the first <span class="hitbox">hitbox</span></p>
-					<p><strong class="active">Active:</strong> frames with a <span class="hitbox">hitbox</span></p>
-					<p><strong class="recovery">Recovery:</strong> after the final <span class="hitbox">hitbox</span></p>
-				</section>
-
-				<section>
-					<h3>Parts of a move</h3>
-					<p>3D fighting games have frames and <span class="hitbox" style="border-radius:10px">hit<em>bubbles</em></span> too!</p>
-					<img src="/img/cpt-falcon-utilt-hitboxes.gif" width="640" height="460" />
-				</section>
-
-				<section>
-					<h3>What makes a move good?</h3>
-					<p>I can't go through <em>every</em> move in <em>every</em> game and tell you its strengths and weaknesses...</p>
-					<img src="/img/ryu-all-moves.gif" width="712" height="311" />
-					<p>But I can teach you how to evaluate moves on your own!</p>
-				</section>
-
-				<section>
-					<h3>What makes a move good?</h3>
-					<p>Few <strong class="startup">startup</strong> frames</p>
-					<p>(less time for your opponent to react)</p>
-					<img src="/img/ryu-roundhouse-6-parts-of-attack.gif" width="960" height="318" />
-				</section>
-
-				<section>
-					<h3>What makes a move good?</h3>
-					<p>Few <strong class="recovery">recovery</strong> frames</p>
-					<p>(less time you are a vulnerable)</p>
-					<img src="/img/move-comparison-2-recovery.gif" width="798" height="390" />
-				</section>
-
-				<section>
-					<h3>What makes a move good?</h3>
-					<p>Big <span class="hitbox">hitboxes</span></p>
-					<p>(more likely to hit your opponent)</p>
-					<img src="/img/move-comparison-3-big.gif" width="416" height="376" />
-				</section>
-
-				<section>
-					<h3>What makes a move good?</h3>
-					<p>Ranged <span class="hitbox">hitboxes</span></p>
-					<p>(hit your opponent from farther away)</p>
-					<img src="/img/move-comparison-4-range.gif" width="432" height="384" />
-				</section>
-
-				<section>
-					<h3>What makes a move good?</h3>
-					<p>Disjointed <span class="hitbox">hitboxes</span></p>
-					<p>(less likely for your <span class="hurtbox">hurtboxes</span> to be hit)</p>
-					<img src="/img/move-comparison-5-disjoint.gif" width="312" height="324" />
-				</section>
-
-				<section>
-					<h3>What makes a move good?</h3>
-					<p>Lots of damage!</p>
-					<p>(more damage = win faster)</p>
-					<img src="/img/move-comparison-6-damage.gif" width="232" height="296" />
-				</section>
-
-				<section>
-					<h3>What makes a move good?</h3>
-					<ul>
-						<li>Few <strong class="startup">startup</strong> frames</li>
-						<li>Few <strong class="recovery">recovery</strong> frames</li>
-						<li>Big <span class="hitbox">hitboxes</span></li>
-						<li>Ranged <span class="hitbox">hitboxes</span></li>
-						<li>Disjointed <span class="hitbox">hitboxes</span></li>
-						<li>Lots of damage</li>
-					</ul>
-				</section>
-
-				<section>
-					<h3>Strategy</h3>
-					<p>There are three big situations you should understand:</p>
-					<ul>
-						<li>Defending yourself</li>
-						<li>Attacking your opponent</li>
-						<li>The "<strong>neutral game</strong>"</li>
-					</ul>
-					<p></p>
-				</section>
-
-				<section>
-					<h3>Defending yourself</h3>
-					<p><strong>Situation:</strong> The opponent is hitting you!  :'(</p>
-					<img src="/img/cammy-guile-defense-1.gif" width="336" height="320" />
-					<p><strong>Goal:</strong> block until you find an opening</p>
-				</section>
-
-				<section>
-					<h3>Defending yourself</h3>
-					<p>Whenever you get hit (blocked or not), you slide a bit</p>
-					<img src="/img/cammy-guile-defense-2.gif" width="364" height="372" />
-					<p>They can't keep attacking forever!</p>
-				</section>
-
-				<section>
-					<h3>Defending yourself</h3>
-					<p>Low attacks can only be blocked while crouching</p>
-					<p>Overhead attacks can only be blocked while standing</p>
-					<img src="/img/cammy-guile-defense-2b.gif" width="693" height="342" />
-				</section>
-
-				<section>
-					<h3>Defending yourself</h3>
-					<p>A <strong class="vocab">throw</strong> is type of attack where your opponent grabs and tosses you. Throws are <strong>unblockable</strong></p>
-					<img src="/img/cammy-guile-defense-3.gif" width="172" height="356" />
-				</section>
-
-				<section>
-					<h3>Defending yourself</h3>
-					<p>Throws have <em>very</em> short range. If the opponent moves in close for a throw, don't block, hit them!</p>
-					<img src="/img/cammy-guile-defense-4.gif" width="380" height="328" />
-				</section>
-
-				<section>
-					<h3>Defending yourself</h3>
-					<p>This forms the fundamental rock-paper-scissors of many fighting games:</p>
-					<img src="/img/rock-paper-scissors.jpg" width="445" height="254" />
-				</section>
-
-				<section>
-					<h3>Defending yourself</h3>
-					<p>If you fail to block, your opponent can <strong class="vocab">combo</strong> you</p>
-					<img src="/img/cammy-guile-defense-5.gif" width="852" height="320" />
-					<p>There's <em>nothing you can do</em> to stop this except to avoid getting hit in the first place</p>
-				</section>
-
-				<section>
-					<h3>Attacking your opponent</h3>
-					<p>A <strong class="vocab">combo</strong> is a string of attacks that are guaranteed to hit provided the first attack is unblocked</p>
-					<img src="/img/ryu-combo.gif" width="267" height="369" />
-				</section>
-
-				<section>
-					<h3>Defending yourself</h3>
-					<p>A particularly long combo:</p>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/0h3ziUx6eMo?start=15&end=32" frameborder="0" allowfullscreen></iframe>
-					<img src="/img/magneto.jpg" width="148" height="238" style="margin-top:20px;margin-left:20px" />
-				</section>
-
-				<section>
-					<h3>Defending yourself</h3>
-					<ul>
-						<li>Just keep blocking</li>
-						<li>Block low/overhead attaks by crouching/standing</li>
-						<li>Hit em if they try to throw you</li>
-						<li>If you fail to block they're free to combo you</li>
-					</ul>
-				</section>
-
-				<section>
-					<h3>Attacking your opponent</h3>
-					<p><strong>Situation:</strong> you are hitting your opponent!  :D</p>
-					<img src="/img/cammy-guile-offense-1.gif" width="400" height="284" />
-					<p><strong>Goal:</strong> get past their defenses and deal damage</p>
-				</section>
-
-				<section>
-					<h3>Attacking your opponent</h3>
-					<p>When your opponent blocks an attack they enter <strong class="blockstun">blockstun</strong>, during which they can't do anything other than block</p>
-					<img src="/img/cammy-guile-offense-2.gif" width="192" height="284" />
-				</section>
-
-				<section>
-					<h3>Attacking your opponent</h3>
-					<p>This attack inflicts <strong class="blockstun">20</strong> frames of blockstun</strong></p>
-					<p>After hitting, it recovers in <strong class="active">9</strong> + <strong class="recovery">7</strong> = <strong>16</strong> frames</p>
-					<img src="/img/cammy-attack-safe.gif" width="762" height="258" />
-					<p>If blocked, you can start another attack <strong class="blockstun">20</strong> - <strong>16</strong> = <strong>4</strong> frames before your opponent&mdash;this is called <strong class="vocab">frame advantage</strong></p>
-				</section>
-
-				<section>
-					<h3>Attacking your opponent</h3>
-					<p>This attack inflicts <strong class="blockstun">20</strong> frames of blockstun</strong></p>
-					<p>After hitting, it recovers in <strong class="active">6</strong> + <strong class="recovery">21</strong> = <strong>27</strong> frames</p>
-					<img src="/img/cammy-attack-unsafe.gif" width="774" height="219" />
-					<p>If blocked, you can start another attack <strong class="blockstun">20</strong> - <strong>27</strong> = <strong>-7</strong> frames <em>after</em> your opponent&mdash;this is called <strong class="vocab">frame <em>disadvantage</em></strong></p>
-				</section>
-
-				<section>
-					<h3>Attacking your opponent</h3>
-					<p>An attack that gives frame advantage is "<strong class="vocab">safe on block</strong>"</p>
-					<p>That means that the opponent can't retaliate, you can keep attacking, and they have to keep blocking!</p>
-					<p>As long as your opponent is blocking, you want to stick to moves that are <strong class="vocab">safe on block</strong></p>
-				</section>
-
-				<section>
-					<h3>Attacking your opponent</h3>
-					<p>Mix in some low attacks, overhead attacks, and throws</p>
-					<img src="/img/cammy-guile-offense-4.gif" width="723" height="345" />
-					<p>A <strong class="vocab">mix up</strong> is a situation where the opponent is forced to guess how to defend</p>
-				</section>
-
-				<section>
-					<h3>Attacking your opponent</h3>
-					<p>"Tripping" attacks will <strong class="vocab">knock down</strong> your opponent</p>
-					<img src="/img/cammy-guile-offense-5.gif" width="789" height="270" />
-					<p>This is the perfect time to set up a mix up, called <strong class="vocab">okizeme</strong> ("waking attack")</p>
-				</section>
-
-				<section>
-					<h3>Attacking your opponent</h3>
-					<p>Example of <strong class="vocab">okizeme</strong> play by Millia Rage In Guilty Gear Xrd</p>
-					<img src="/img/millia.jpg" width="210" height="320" style="margin-top:20px;margin-right:20px" />
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/0i0l5w2w0m4?start=2483&end=2535" frameborder="0" allowfullscreen></iframe>
-				</section>
-
-				<section>
-					<h3>Attacking your opponent</h3>
-					<p>Your opponent has to block by holding <em>away</em> from you</p>
-					<img src="/img/cammy-guile-offense-7.gif" width="600" height="285" />
-					<p>If you jump to the other side of them, that direction changes</strong></p>
-					<p>If they don't know which side you'll jump to, they don't know which direction to block. This is called a <strong class="vocab">cross-up</strong></p>
-				</section>
-
-				<section>
-					<h3>Attacking your opponent</h3>
-					<p>Vega's insane cross-up game:</p>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/ReOSf5ydZpI?start=2953&end=2984" frameborder="0" allowfullscreen></iframe>
-					<img src="/img/vega.jpg" width="112" height="267" style="margin-top:20px;margin-left:20px" />
-				</section>
-
-				<section>
-					<h3>Attacking your opponent</h3>
-					<p>When your opponent fails to block, now's your chance!</p>
-					<img src="/img/cammy-guile-offense-3.gif" width="420" height="296" />
-					<p>A <strong class="vocab">hit confirm</strong> is when you notice the opponent failed to block and turn your single hit into a combo!</p>
-				</section>
-
-				<section>
-					<h3>Attacking your opponent</h3>
-					<ul>
-						<li>Use attacks that are safe on block</li>
-						<lI>Get tricky with some mix-ups and cross-ups</lI>
-						<li>When they fail to block, combo them!</li>
-					</ul>
-				</section>
-
-				<section>
-					<h3>The neutral game</h3>
-					<p><strong>Situation:</strong> neither player has an immediate advantage</p>
-					<img src="/img/cammy-guile-neutral-1.gif" width="534" height="243" />
-					<p><strong>Goal:</strong> gain an advantage for yourself</p>
-				</section>
-
-				<section>
-					<h3>The neutral game</h3>
-					<p>The neutral game is extremely complex because both players have all options open to them</p>
-					<p>So what do you do?</p>
-				</section>
-
-				<section>
-					<h3>The neutral game</h3>
-					<p>It's all about <strong>SPACING</strong></p>
-					<p>At long range none of your attacks will reach each other</p>
-					<img src="/img/cammy-guile-neutral-2.gif" width="356" height="328" />
-					<p>At short range all of them will</p>
-				</section>
-
-				<section>
-					<h3>The neutral game</h3>
-					<p>In-between those two extremes interesting stuff happens</p>
-					<p>Cammy (left) has a kick that outranges Guile (right)</p>
-					<img src="/img/cammy-guile-neutral-4.gif" width="470" height="260" />
-					<p>She might try to abuse this by staying at that range</p>
-				</section>
-
-				<section>
-					<h3>The neutral game</h3>
-					<p>If Guile moves just outside of that range, he can <strong class="vocab">bait</strong> her into using an attack that will <spna class="vocab">whiff</spna> (miss)</p>
-					<img src="/img/cammy-guile-neutral-5.gif" width="490" height="260" />
-				</section>
-
-				<section>
-					<h3>The neutral game</h3>
-					<p>Because of the extended <span class="hurtbox">hurtbox</span> from her attack, Guile can counterattack and <span class="vocab">punish</span> from where he is</p>
-					<img src="/img/cammy-guile-neutral-6.gif" width="505" height="260" />
-				</section>
-
-				<section>
-					<h3>The neutral game</h3>
-					<p>Cammy might respond by moving extra close, but then Guile might try to hit her</p>
-					<img src="/img/cammy-guile-neutral-7.gif" width="404" height="328" />
-					<p>This back-and-forth of spacing is called <strong class="vocab">footsies</strong></p>
-				</section>
-
-				<section>
-					<h3>The neutral game</h3>
-					<p>Using footsies to find an opening:</p>
-					<img src="/img/fox.jpg" width="200" height="266" style="margin-top:20px;margin-right:20px" />
-					<iframe width="420" height="315" src="https://www.youtube.com/embed/mk09c6iLLdU?start=20&end=29" frameborder="0" allowfullscreen></iframe>
-				</section>
-
-				<section>
-					<h3>The neutral game</h3>
-					<p>Use <strong class="vocab">pokes</strong> to deal damage and control space (<strong class="vocab">zone</strong>)</p>
-					<img src="/img/dhalsim-attack.gif" width="540" height="168" />
-					<p><strong class="vocab">Projectiles</strong> are also particularly potent at zoning</p>
-					<img src="/img/hadoken.gif" width="144" height="96" />
-				</section>
-
-				<section>
-					<h3>The neutral game</h3>
-					<p>Zoning with projectiles:</p>
-					<img src="/img/morrigan.jpg" width="200" height="279" style="margin-top:20px;margin-right:20px" />
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/eBwaZZ3z-lg?start=2870&end=2947" frameborder="0" allowfullscreen></iframe>
-				</section>
-
-				<section>
-					<h3>The neutral game</h3>
-					<p>Instead of zoning your opponent, you can just try to get up close and personal as fast as possible</p>
-					<img src="/img/feilong-stand.gif" width="138" height="240" />
-					<p>This playstyle is referred to as "<strong class="vocab">rushdown</strong>"</p>
-				</section>
-
-				<section>
-					<h3>The neutral game</h3>
-					<ul>
-						<li>Find the optimal distance from your opponent</li>
-						<li>Punish your opponent's whiffed moves</li>
-						<li>Poke from range</li>
-						<li>Close the distance if it's advantageous</li>
-					</ul>
-				</section>
-
-				<section>
-					<h3>How to get better</h3>
-					<p>Play!!!!!</p>
-					<img src="/img/cpt-falcon.jpg" width="320" height="320" />
-					<p>You only get better by practicing</p>
-				</section>
-
-				<section>
-					<h3>How to get better</h3>
-					<p>Watch the pros play!!</p>
-					<ul>
-						<li><a href="https://www.youtube.com/watch?v=IZ__PbvsI4g">Street Fighter 4</a></li>
-						<li><a href="https://www.youtube.com/watch?v=EjjY9IQGU0U">Street Fighter II Turbo</a></li>
-						<li><a href="https://www.youtube.com/watch?v=eBwaZZ3z-lg">Marvel vs Capcop 3</a></li>
-						<li><a href="https://www.youtube.com/watch?v=BIZeqNkVPVc">Super Smash Bros. Melee</a></li>
-						<li><a href="https://www.youtube.com/watch?v=lprQR0AJmXo">Super Smash Bros. 4</a></li>
-						<li><a href="https://www.youtube.com/watch?v=0i0l5w2w0m4">Guilty Gear Xrd</a></li>
-						<li><a href="https://www.youtube.com/watch?v=UO2IgOKHAZA">Killer Instinct</a></li>
-						<li><a href="https://www.youtube.com/watch?v=TLeplRGuC0Q">Tekken 7</a></li>
-						<li><a href="https://www.youtube.com/watch?v=uNf0yrbOqaw">Mortal Kombat X</a></li>
-						<li><a href="https://www.youtube.com/watch?v=bRprjDJo9sg">Skullgirls</a></li>
-						<li><a href="https://www.youtube.com/watch?v=hscblqsOydQ">Persona 4</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h3>Some feminism for you</h3>
-					<blockquote style="font-size:60%">You know how each character has a life bar? At one point, I wanted to make the power gauge for Chun-Li shorter than for the other characters because women are not as strong. But Nishitani didn't want to do that. We both had legitimate reasons, but then we came to an agreement to not make it shorter.</blockquote>
-					<p style="font-size:60%">&mdash;Yoshiki Okamoto (game designer for Street Fighter II)</p>
-				</section>
-
-				<section>
-					<h3>Some feminism for you</h3>
-					<img src="/img/beauty-and-the-beast.gif" width="760" height="424" />
-				</section>
-
-				<section>
-					<h3>Some feminism for you</h3>
-					<blockquote style="font-size:60%">Chun-Li has big thighs, right? So back in the day, I asked Mr. Yasuda, "Why does she have such big thighs?" And he started shouting and went off and was like, "I can't believe you don't understand the appeal." And he started explaining the attraction. And you know, I'm a woman and I asked the question but it kind of got awkward when he started explaining his fetishes. I mean, he has really strong feelings toward his creations. There's a reason for everything being the way that it is.</blockquote>
-					<p style="font-size:60%">&mdash;Yoko Shimomura (composer of Street Fighter II's soundtrack)<br/>talking about Akira Yasuda (lead game designer of Street Fighter II)</p>
-				</section>
-
-				<section>
-					<h3>Some feminism for you</h3>
-					<img src="/img/wtf.gif" width="500" height="289" />
-				</section>
-
-				<section>
-					<h3>Some feminism for you</h3>
-					<p>Most female fighting game characters are sexualized</p>
-					<img src="/img/characters.jpg" width="676" height="302" />
-					<p>This is not okay! This is a problem!</p>
-				</section>
-
-				<section>
-					<h3>Some feminism for you</h3>
-					<p>The fighting game community is extremely racially diverse</p>
-					<img src="/img/audience.jpg" width="500" height="333" />
-					<p>... but gender diversity is pretty bad</p>
-				</section>
-
-				<section>
-					<h3>Some feminism for you</h3>
-					<p>It's getting better, but it's a problem we need to be aware of</p>
-					<p>Be an ally!</p>
-				</section>
-
-				<section>
-					<h3>Thank you!!</h3>
-					<p>Questions?</p>
-					<ul style="font-size:70%;">
-						<li>Sprites: <a href="http://www.spriters-resource.com/">The Spriter's Resource</a></li>
-						<li>Frame data: <a href="http://wiki.shoryuken.com/">Shoryuken Wiki</a></li>
-						<li>Quotes: <a href="http://www.polygon.com/a/street-fighter-2-oral-history">Street Fighter II: An Oral History</a> on Polygon</li>
-						<li>Reading: <a href="http://www.polygon.com/2014/7/7/5876983/how-to-play-street-fighter-fighting-game-primer">A fighting game primer for everyone</a> on Polygon</li>
-					</ul>
-				</section>-->
 			</div>
 		</div>
 
