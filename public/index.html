@@ -46,9 +46,8 @@
 				<section>
 					<h3>How did pixel art come about?</h3>
 					<p>Back in the day, computers weren't as good and pixel art<br> was our best option for displaying graphics</p>
-					<p>Now we have other options</p>
 					<img src="/img/mario-1.png" width="450" height="270" />
-					<p>But pixel art survives as an art form</p>
+					<p>Now we have other options,<br> but pixel art survives as an art form</p>
 				</section>
 
 				<section>
@@ -68,13 +67,6 @@
 				</section>
 
 				<section>
-					<h3>How is pixel art used today?</h3>
-					<p>Pixel art is still used to make games</p>
-					<p>But it has applications outside of that too</p>
-					<img src="/img/pixel-art-examples.jpg" width="826" height="301" />
-				</section>
-
-				<section>
 					<h3>How do I get started?</h3>
 					<p>The best way to learn is to make some yourself, so...<br> remember Space Invaders?</p>
 					<img src="/img/invader-3.gif" width="559" height="356" />
@@ -86,15 +78,17 @@
 					<p>
 						<ul>
 							<li>White on black</li>
-							<li>8px tall, 8-16px wide</li>
-							<li>Should have "eyes" and probably "fangs"</li>
+							<li>8px tall; 8px to 16px wide</li>
+							<li>Has "eyes" and maybe "fangs"</li>
+							<li>Symmetrical</li>
 							<li>All one shape (no stray pixels)</li>
+							<li>10 minutes</li>
 						</ul>
 					</p>
 				</section>
 
 				<section>
-					<h3>Frames</h3>
+					<h3>Making it move</h3>
 					<p>A <span class="vocab">frame</span> is a still image</p>
 					<figure>
 						<img src="/img/megaman-run-frames.gif" width="400" height="120" />
@@ -111,25 +105,21 @@
 							<li>Duplicate the first frame of your invader</li>
 							<li>Modify the second frame to make it wiggle</li>
 							<li>Set framerate to 4 FPS</li>
+							<li>10 minutes</li>
 						</ul>
 					</p>
 				</section>
 
 				<section>
-					<h3>Making a sprite</h3>
+					<h3>Creating an outline</h3>
 					<p>Let's try making a more complex sprite</p>
-					<img src="/img/frog1.gif" width="324" height="264" />
-				</section>
-
-				<section>
-					<h3>Creating an outline</h3>
-					<p>The first step is to get the basic lines and colors down</p>
 					<img src="/img/frog2.gif" width="324" height="264" />
+					<p>We'll start with just the outline<br> and the basic blocks of color</p>
 				</section>
 
 				<section>
 					<h3>Creating an outline</h3>
-					<p>There are two basic strategies for doing this:</p>
+					<p>Two strategies to get a basic outline:</p>
 					<p>1. Fiddle with some lines, then fill them in</p>
 					<img src="/img/frog3.gif" width="750" height="132" />
 					<p>2. Sculpt some color blobs, then outline them</p>
@@ -137,37 +127,27 @@
 				</section>
 
 				<section>
-					<h3>Creating an outline</h3>
-					<p>In reality, you should mix these two techniques</p>
-					<img src="/img/frog5.gif" width="750" height="132" />
-					<p>(This is what I actually did)</p>
-				</section>
-
-				<!--<section>
-					<h3>Linework</h3>
-					<p>We can't always draw the shapes we want using pixels, so we need draw our lines so they <em>imply</em> the shapes we want</p>
-					<img src="/img/implied-shapes-1.png" width="525" height="275" />
-				</section>-->
-
-				<section>
-					<h3>Linework</h3>
-					<p>Careful! Small changes can imply very different shapes</p>
-					<img src="/img/implied-shapes-2.png" width="616" height="490" />
+					<h3>Jaggies bad!</h3>
+					<p>When drawing lines, avoid <span class="vocab">jaggies</span>!</p>
+					<img src="/img/jaggies-bad.png" width="392" height="128" />
+					<p>Use loosely-connected groups of pixels instead</p>
+					<img src="/img/jaggies-good.png" width="392" height="128" />
 				</section>
 
 				<section>
-					<h3>Activity 3: Create a sprite</h3>
-					<img src="/img/implied-shapes-3.png" width="735" height="330" />
+					<h3>Activity 3: Create an outline</h3>
+					<img src="/img/implied-shapes-3.png" width="412" height="330" />
 					<p>
 						<ul>
-							<li>Create an outline of any 3D object</li>
-							<li>Fill it with the fewest possible colors</li>
-							<li>Try to stay within 24x24 (32x32 max)</li>
-							<li>Keep your lines in mind!</li>
+							<li>Create an outline with color blocks</li>
+							<li>Try to stay within 24px by 24px</li>
+							<li>No jaggies (unless it makes sense)</li>
+							<li>20 minutes</li>
 						</ul>
 					</p>
 				</section>
 
+				<!--
 				<section>
 					<h3>Coloring a sprite</h3>
 					<p>Thinking of colors in terms of HSL</p>
@@ -178,6 +158,7 @@
 					<p>Different <span class="vocab">lightness</span> (but same hue/saturation):</p>
 					<img src="/img/hsl-3.png" width="300" height="50" />
 				</section>
+				-->
 
 				<section>
 					<h3>Coloring a sprite</h3>
@@ -187,9 +168,9 @@
 
 				<section>
 					<h3>Coloring a sprite</h3>
-					<p>The easiest way to do this is by varying lightness (a slightly whiter color for highlights, slightly blacker for shadows)</p>
+					<p>Choose a direction for your light source</p>
 					<img src="/img/ball-shading-2.png" width="350" height="320" />
-					<p>(Note: highlights/shadows depend on the light source. In general light should be above and at an angle to your sprite)</p>
+					<p>Usually the light is coming from above,<br> to the side, and slightly in front</p>
 				</section>
 
 				<section>
@@ -203,9 +184,16 @@
 					<h3>Color ramps</h3>
 					<p>The colors you choose for highlights/shadows can be arranged from dark to light to form a <span class="vocab">color ramp</span></p>
 					<img src="/img/ball-shading-4.png" width="350" height="200" />
-					<p>This color ramp was made just by varying lightness, but we can make our color ramps more exciting...</p>
 				</section>
 
+				<section>
+					<h3>Color ramps</h3>
+					<p>A complete palette is just a bunch of color ramps</p>
+					<img src="/img/color-ramp-5.png" width="408" height="324" />
+					<p>By finding colors that can be used in multiple color ramps, you lower your color count and create visual consistency</p> 
+				</section>
+
+				<!--
 				<section>
 					<h3>Color ramps</h3>
 					<p>In real life light and shadows change the hue of an object</p>
@@ -218,6 +206,7 @@
 					<p>Highlights tend to be more yellow,<br>shadows tend to be more blue</p>
 					<img src="/img/color-ramp-2.jpg" width="769" height="384" />
 				</section>
+				-->
 
 				<!--<section>
 					<h3>Color ramps</h3>
@@ -225,6 +214,7 @@
 					<img src="/img/color-ramp-3.jpg" width="557" height="415" />
 				</section>-->
 
+				<!--
 				<section>
 					<h3>Color ramps</h3>
 					<p>Here's my froggie with and without hue shifting</p>
@@ -232,23 +222,18 @@
 					<p>The frog on the left is more visually consistent</p>
 					<p>By hue shifting we also get to reuse a color&mdash;the lightest green is the same color as the lightest yellow</p> 
 				</section>
-
-				<section>
-					<h3>Color ramps</h3>
-					<p>A complete palette is just a bunch of color ramps</p>
-					<img src="/img/color-ramp-5.png" width="408" height="324" />
-					<p>By finding colors that can be reused in multiple color ramps, you lower your color count and increase consistency</p> 
-				</section>
+				-->
 
 				<section>
 					<h3>Activity 4: Color your sprite</h3>
-					<img src="/img/frog6.gif" width="640" height="220" />
+					<img src="/img/frog6.png" width="512" height="280" />
 					<p>
 						<ul>
 							<li>Add shadows and highlights</li>
+							<li>Try to use 5 to 9 colors</li>
 							<li>Organize your colors into color ramps</li>
-							<li>Be on the lookout for reusable colors</li>
 							<li>Add any final details</li>
+							<li>20 minutes</li>
 						</ul>
 					</p>
 				</section>
