@@ -1,2 +1,2 @@
-# fighting-game-fundamentals
-A slideshow on the basics of fighting games.
+# pixel-art-slideshow
+A slideshow on the basics of pixel art.
