@@ -1,2 +1,2 @@
-# pixel-art-slideshow
-A slideshow on the basics of pixel art.
+# women-in-games-slideshow
+My slides for the 3/14/2018 Women in Games event.
